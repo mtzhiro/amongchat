@@ -1,0 +1,22 @@
+amacha.cfg
+  chat room name: $crn = 'amacha-source';
+  key for each chat room (default= amacha123): $lbpas = 'test';
+  seed for each chat room: $amachaceed = 'xxxxxxxx';
+.htaccess
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /$crn/
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /$crn/index.php [L]
+  </IfModule>
+file 
+ amacha.php, amachaie.php, *.png, tokimg.png, amacha_imagesave.php 
+ js/ js/
+ css/ css/ 
+ img/ 
+ file2_
+amacha.php
+  $crn
+  key: ????????
